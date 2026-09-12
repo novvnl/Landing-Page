@@ -1,0 +1,210 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFlow - Soluções Web Modernas</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">TechFlow</div>
+        <nav class="nav">
+          <a href="#formulario">Contato</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN - HERO + FORMULÁRIO -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container">
+        <h1>Transforme Sua Presença Digital</h1>
+        <p class="hero-subtitle">Criamos experiências web modernas que convertem visitantes em clientes</p>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section class="formulario-section" id="formulario">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="form-header">
+            <h2>Solicite uma Proposta Gratuita</h2>
+            <p>Preencha o formulário abaixo e nossa equipe entrará em contato em breve</p>
+          </div>
+
+          <form class="formulario" action="#" method="POST">
+            <!-- Linha 1: Nome e Email -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input 
+                  type="text" 
+                  id="nome" 
+                  name="nome" 
+                  placeholder="Seu nome" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  placeholder="seu@email.com" 
+                  required
+                >
+              </div>
+            </div>
+
+            <!-- Linha 2: Empresa e Telefone -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input 
+                  type="text" 
+                  id="empresa" 
+                  name="empresa" 
+                  placeholder="Nome da empresa" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input 
+                  type="tel" 
+                  id="telefone" 
+                  name="telefone" 
+                  placeholder="(11) 99999-9999" 
+                  required
+                >
+              </div>
+            </div>
+
+            <!-- Linha 3: Serviço Desejado -->
+            <div class="form-group">
+              <label for="servico">Qual serviço você precisa?</label>
+              <select id="servico" name="servico" required>
+                <option value="">Selecione um serviço</option>
+                <option value="web-design">Web Design</option>
+                <option value="desenvolvimento">Desenvolvimento Web</option>
+                <option value="app-mobile">Aplicativo Mobile</option>
+                <option value="seo">SEO & Marketing</option>
+                <option value="consultoria">Consultoria Digital</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <!-- Linha 4: Orçamento -->
+            <div class="form-group">
+              <label for="orcamento">Orçamento Estimado</label>
+              <input 
+                type="text" 
+                id="orcamento" 
+                name="orcamento" 
+                placeholder="R$ - Valor aproximado"
+              >
+            </div>
+
+            <!-- Linha 5: Mensagem -->
+            <div class="form-group">
+              <label for="mensagem">Conte-nos sobre seu projeto</label>
+              <textarea 
+                id="mensagem" 
+                name="mensagem" 
+                placeholder="Descreva brevemente seu projeto e objetivos..." 
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Checkbox de Termos -->
+            <div class="form-checkbox">
+              <input 
+                type="checkbox" 
+                id="termos" 
+                name="termos" 
+                required
+              >
+              <label for="termos">
+                Concordo em receber comunicações de marketing da TechFlow
+              </label>
+            </div>
+
+            <!-- Botão Submit -->
+            <button type="submit" class="btn-submit">Enviar Proposta</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Coluna 1: Sobre -->
+        <div class="footer-column">
+          <h4>TechFlow</h4>
+          <p>Transformando ideias em soluções digitais inovadoras desde 2020.</p>
+        </div>
+
+        <!-- Coluna 2: Links Rápidos -->
+        <div class="footer-column">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#formulario">Contato</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Contato -->
+        <div class="footer-column">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="mailto:contato@techflow.com">contato@techflow.com</a></li>
+            <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+            <li>São Paulo, SP - Brasil</li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Redes Sociais -->
+        <div class="footer-column">
+          <h4>Redes Sociais</h4>
+          <div class="social-links">
+            <a href="#" class="social-link facebook">f</a>
+            <a href="#" class="social-link instagram">📷</a>
+            <a href="#" class="social-link linkedin">in</a>
+            <a href="#" class="social-link twitter">𝕏</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechFlow. Todos os direitos reservados.</p>
+        <p>Desenvolvido com CSS moderno</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
